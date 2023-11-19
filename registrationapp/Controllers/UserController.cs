@@ -27,7 +27,9 @@ namespace registrationapp.Controllers
             conn.ConnectionString = "Data Source=DESKTOP-R9IOJR3;Initial Catalog=registrationdb;Integrated Security=True;Pooling=False;MultipleActiveResultSets=True;Application Name=EntityFramework";
             conn.Open();
             cmd.Connection = conn;
-            cmd.CommandText="select *from registrationtbl"
+            cmd.CommandText="select *from registrationtbl";
+
+            return View();
         }
 
     }
